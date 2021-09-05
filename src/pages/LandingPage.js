@@ -6,6 +6,7 @@ import MostPicked from 'parts/MostPicked'
 
 import landingPage from 'json/landingPage.json'
 import Categories from 'parts/Categories'
+import Testimony from 'parts/Testimony'
 export default class LandingPage extends Component {
     constructor(props){
         super(props)
@@ -19,6 +20,7 @@ export default class LandingPage extends Component {
                 <Hero refMostPicked={this.refMostPicked} data={landingPage.hero}></Hero>
                 <MostPicked refMostPicked={this.refMostPicked} data={landingPage.mostPicked}></MostPicked>
                 <Categories data={landingPage.categories}></Categories>
+                <Testimony data={landingPage.testimonial}></Testimony>
             </>
         )
     }

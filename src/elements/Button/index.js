@@ -38,7 +38,7 @@ export default function Button(props) {
         }
     }
     return (
-        <button className={className.join(' ')} style={props.style} onClick={onclick}>
+        <button className={className.join(' ')} style={props.style} onClick={onClick}>
             {props.children}
         </button>
     )
@@ -46,7 +46,7 @@ export default function Button(props) {
 
 Button.propTypes={
     type: propTypes.oneOf(['button', 'link']),
-    onclick: propTypes.func,
+    onClick: propTypes.func,
     target: propTypes.string,
     href: propTypes.string,
     className: propTypes.string,

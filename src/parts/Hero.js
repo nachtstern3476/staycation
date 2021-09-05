@@ -10,7 +10,7 @@ import formatNumber from 'utils/formatNumber'
 export default function Hero(props) {
     function showMostPicked(){
         window.scrollTo({
-            top: props.refMostPicked.current.offsetTop = 30,
+            top: props.refMostPicked.current.offsetTop - 30,
             behavior: "smooth"
         })
     }
@@ -27,7 +27,7 @@ export default function Hero(props) {
                         We provide what you need to enjoy your holiday with family. Time to
                         make another memorable moments.
                     </p>
-                    <Button className="btn px-5" hasShadow isPrimary onclick={showMostPicked}>
+                    <Button className="btn px-5" hasShadow isPrimary onClick={showMostPicked}>
                         Show Me Now
                     </Button>
 
